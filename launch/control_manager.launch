@@ -1,0 +1,14 @@
+<launch>
+	<node name="control_manager" pkg="control_manager" type="control_manager" respawn="false" output="screen">
+        <param name="precise_return" value="1"/>
+        <param name="print_level" value="debug"/>
+        <param name="first_filter_radius" value="0.1"/>
+        <param name="first_filter_num" value="30"/>
+        <param name="second_filter_radius" value="0.01"/>
+        <param name="second_filter_num" value="3"/>
+        <param name="detection_range" value="0.05"/>
+        <param name="adjust_mileage" value="1"/>
+        <param name="adjust_min_range" value="0.02"/>
+        <param name="adjust_max_range" value="0.4"/>
+    </node>
+</launch>
